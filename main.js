@@ -1,10 +1,43 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+addMeToEnd = (arr) => {
+  arr.push('Colin')
+}
 
+addMeToStart = (arr) => {
+  arr.unshift('Colin')
+}
 
+changeLast = (arr1, value) => {
+  arr1.pop() + arr1.push(value)
+}
 
+changeAllValuesTo = (arr, value) =>{
+  arr.pop()
+  arr.pop()
+  arr.pop()
+  arr.pop()
+  arr.pop()
+  arr.pop()
+  arr.push(value)
+  arr.push(value)
+  arr.push(value)
+  arr.push(value)
+  arr.push(value)
+  arr.push(value)
+}
 
+oddOrEven = (arr) => {
+  if (arr % 2 === 0) {
+    arr += arr.push['even']
+  }
+}
+
+changeNextThreeToValue = (arr) => {
+  arr.splice(1, 3)
+  arr.push(15)
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
