@@ -39,7 +39,7 @@ changeAllValuesTo = (array, value) => {
 }
 
 oddOrEven = (arr) => {
-  for (i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 === 0) {
       arr[i] = 'even'
     } else {
@@ -49,9 +49,10 @@ oddOrEven = (arr) => {
 }
 
 
-changeNextThreeToValue = (arr) => {
-  arr.splice(1, 3)
-  arr.push(15)
+changeNextThreeToValue = (index, array, value) => {
+  for (let i = index; i < index + 3; i++) {
+    array[i] = value;
+  }
 }
 
 /*********************************
