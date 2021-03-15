@@ -13,6 +13,10 @@ changeLast = (arr1, value) => {
   arr1.pop() + arr1.push(value)
 }
 
+changeLast = (arr1, value) => {
+  arr1[arr1.length - 1] = value;
+}
+// Very manual version 
 changeAllValuesTo = (arr, value) =>{
   arr.pop()
   arr.pop()
@@ -28,11 +32,22 @@ changeAllValuesTo = (arr, value) =>{
   arr.push(value)
 }
 
-oddOrEven = (arr) => {
-  if (arr % 2 === 0) {
-    arr += arr.push['even']
+changeAllValuesTo = (array, value) => {
+  for (let i = 0; i < array.length; i++) {
+    array[i] = value;
   }
 }
+
+oddOrEven = (arr) => {
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      arr[i] = 'even'
+    } else {
+      arr[i] = 'odd'
+    }
+  }
+}
+
 
 changeNextThreeToValue = (arr) => {
   arr.splice(1, 3)
